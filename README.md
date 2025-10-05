@@ -183,7 +183,7 @@ A continuación instrucciones para ejecutar localmente tanto en Windows como en 
 1. Clonar el repositorio
 
 ```powershell
-git clone <tu-repo>
+git clone https://github.com/YamileOchoa/Django-QuizIA.git
 cd src
 ```
 
