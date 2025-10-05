@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework import viewsets, status
 from rest_framework.decorators import api_view, action
 from rest_framework.response import Response
@@ -7,6 +8,10 @@ from .serializers import (
     QuizSerializer, QuestionSerializer, ChoiceSerializer,
     QuizDetailSerializer, SubmitAnswerSerializer
 )
+
+def quiz_form_view(request):
+    return render(request, 'quizzes/quiz_form.html')
+
 
 
 @api_view(['GET'])
